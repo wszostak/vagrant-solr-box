@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
     puppet.manifest_file  = "default.pp"
   end
   config.vm.provider "virtualbox" do |v|
-    v.customize ["modifyvm", :id, "--cpus", "2"]
-    v.customize ["modifyvm", :id, "--memory", "1024"]
+    v.customize ["modifyvm", :id, "--cpus", "1"]
+    v.customize ["modifyvm", :id, "--memory", "256"]
   end
 end
